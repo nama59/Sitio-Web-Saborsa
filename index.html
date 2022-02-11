@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Saborsa</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kreon:wght@400;700&family=Krub:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!--tipo de letra sacada de google font-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styleind.css" as="stlye">
+    <!--Para que el sitio web o la hoja cargue mas rapido-->
+    <link href="css/styleind.css" rel="stylesheet">
+    <!--Para enlazar la hoja de stilo de index y que se refleje el diseño-->
 </head>
+
 <body>
-    <!--NAVEGACION TRANSPARENTE-->
-    <nav >
-        
-        <a href="index.html">Inicio</a></li>
-        <a href="nosotros.html">Nosotros</a></li>
-        <a href="productos.html">Productos</a></li>
-        <a href="presencia.html">Presencia</a></li>
-        <a href="https://bolsadetrabajo-gruposaborsa.netlify.app/">Bolsa de
-                trabajo</a></li>
+    <!--NAVEGACION PRINCIPAL-->
+    <div class="nav-bg">
+        <!--esta clase nos ayudara para extender lal barra de navegación en css-->
 
-</nav>
+        <!--bg=background-->
+        <nav class="navegacion-principal contenedor">
 
-<!--imagen logo circulo-->
+            <a href="index.html">
+                <z>Inicio </z>
+            </a>
+            <a href="nosotros.html"> <b>Nosotros</b> </a>
+            <a href="productos.html">
+                <c>Productos</c>
+            </a>
+            <a href="presencia.html">
+                <d>Presencia</d>
+            </a>
+            <a href="https://bolsadetrabajo-gruposaborsa.netlify.app/">
+                <e>Bolsa de trabajo</e>
+            </a>
 
-<img src="img/logoCirculo.jpg">
-<!--TERMINA NAVEGACION-->
-     <section>
-           <!--insertar aquí imagen principal-->
-           <h1>Entre más sanas mas sabrosas</h1> <!--slogan-->
-     </section>
-  
-     <main>
-    <h2>¿Que es Grupo Saborsa?</h2>
-       <p> Empresa del ramo
-        alimenticio, que se dedica a la fabricación,
-        al canal de distribucion y venta de productos de alta
-        calidad y sabor inigualable.</p>
+        </nav>
+    </div>
 
-    <section>
-    <h3>Matriz de Grupo Saborsa</h3>
-    <!--insertar mapa-->
+    <!--imagen logo circulo-->
+
+
+    <!--TERMINA NAVEGACION-->
+    <section class="imagenlogo">
+        <div class="contenido-imagenlogo">
+            <!--insertar aquí imagen principal-->
+            <h1>Entre más sanas mas sabrosas</h1>
+            <!--slogan-->
+        </div>
     </section>
-</main>
 
-<footer>
-    <p> Vicente Guerrero, Dgo</p>
-    <p> todos los derechos reservados</p>
-</footer>
+    <main>
+        <h2>¿Que es Grupo Saborsa?</h2>
+        <p> Empresa del ramo
+            alimenticio, que se dedica a la fabricación,
+            al canal de distribucion y venta de productos de alta
+            calidad y sabor inigualable.</p>
 
-    
+        <section>
+            <h3>Matriz de Grupo Saborsa</h3>
+            <!--insertar mapa-->
+        </section>
+    </main>
+
+    <footer>
+        <p> Vicente Guerrero, Dgo</p>
+        <p> todos los derechos reservados</p>
+    </footer>
+
+
 </body>
+
 </html>
