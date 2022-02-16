@@ -39,14 +39,14 @@ html{
 body{
     font-size: 16px;
     font-family: 'Kreon', serif;
-    background-image: linear-gradient(to top, var(--rosafondo) 0%, var(--blnaco)100%) ; /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+    background-image: linear-gradient(to top, var(--amarillopastel) 0%, var(--blnaco)30%) ; /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
 }
 
 /*TIPOGRAFIA*/
 h1{
     font-size: 6rem;
     
-    color: var(--rosafondo);
+    color: var(--blnaco);
     font-family: 'Staatliches', cursive;
     
     
@@ -193,11 +193,8 @@ p{
           justify-content: end;
           
        }
+       .maps {
+         display: block; 
+       }
 
-       
-       
-       
-
-      
-
-     
+ 
