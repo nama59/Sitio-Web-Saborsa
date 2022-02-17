@@ -7,6 +7,7 @@
    --rosafondo: #f3b0b6;
    --verdepastel: #77dd77;
    --amarillopastel: #FFFE71;
+   --grisclaro: #9c9c9c;
 
 
 }
@@ -24,13 +25,42 @@ html{
 .contenedor{
    max-width: 70rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
    margin: 0 auto; /**/
+   text-align: center;
 }
+
+/*BOTON CONTACTO*/
+.botonContacto {
+   
+   background-color: var(--azulpastel);
+   color: var(--blnaco);
+   padding: 1rem 1rem;
+   margin-top: 3rem;
+   font-size: 2rem;
+   text-decoration: none;
+   text-transform: uppercase; /*mayusculas*/
+   font-weight: bold; /*negritas*/
+   border-radius: .6rem;
+   width: 100%;
+  
+   
+}
+@media (min-width: 768px) {
+   .botonContacto{
+      width: auto;
+      
+   }
+   
+}
+
+
+
 
 .sombra{
    -webkit-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
    -moz-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
     box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
-    background-color: var(--blnaco);
+    background-image: linear-gradient(to top, var(--rosafondo) 0%, var(--blnaco)40%);  /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+
     padding: 2rem;
     border-radius: 2rem;
     
@@ -39,7 +69,7 @@ html{
 body{
     font-size: 16px;
     font-family: 'Kreon', serif;
-    background-image: linear-gradient(to top, var(--amarillopastel) 0%, var(--blnaco)30%) ; /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blnaco)30%); /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
 }
 
 /*TIPOGRAFIA*/
@@ -54,9 +84,10 @@ h1{
 
 h2{
   
-   font-family: 'Bebas Neue', cursive;
+   font-family: 'Rubik', sans-serif;
    font-size: 5rem;
    padding-top: 5rem;
+  
 }
 
 h3,h4{
@@ -67,12 +98,17 @@ h1,h2,h3,h4{
    text-align: center;
 }
 
-p{
+#parrafo1{
+   font-size: 3rem;
    text-align: center;
+   text-align: justify;
+   
+    
+    
 }
- footer{
-    font-size: 2rem;
- }
+
+
+ 
 
 
 /*NAVEGACIÓN PRINCIPAL*/
@@ -195,6 +231,31 @@ p{
        }
        .maps {
          display: block; 
+         text-align: center;
        }
 
+       /*:::PIE DE PAGINA:::*/
+       
+       #parrafo-final{
+         text-align: center;
+         font-size: 2rem;
+         margin-top: 20px;
+         font-family: "lato-regular"
+      }
+     
+      #saborsa-final{
+        justify-items: center;
+        display: block;
+        margin: 10rem auto 0 auto;
+        
+        width: 260px;
+        height: 100px;
+       
+      }
+      
+
+   /*ESTILOS PARA INDEX NOSOTROS*/   
+
+   /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
+      
  
