@@ -4,106 +4,546 @@
    --negro: #212121;
    --azulpastel: #00AAE4;
    --rosa: #F03687;
+   --rosafondo: #f3b0b6;
    --verdepastel: #77dd77;
    --amarillopastel: #FFFE71;
+   --grisclaro: #9c9c9c;
 
 
 }
 
+/*GLOBALES*/
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+ /*contenedor para manejar la barra de navegación, ancho, etc*/
+.contenedor{
+   max-width: 70rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
+   margin: 0 auto; /**/
+   text-align: center;
+}
+
+/*BOTON CONTACTO*/
+.botonContacto {
+   
+   background-color: var(--azulpastel);
+   color: var(--blnaco);
+   padding: 1rem 1rem;
+   margin-top: 3rem;
+   font-size: 2rem;
+   text-decoration: none;
+   text-transform: uppercase; /*mayusculas*/
+   font-weight: bold; /*negritas*/
+   border-radius: .6rem;
+   width: 100%;
+  
+   
+}
+@media (min-width: 768px) {
+   .botonContacto{
+      width: auto;
+      
+   }
+   
+}
+
+
+
+
+.sombra{
+   -webkit-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
+   -moz-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
+    box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
+    background-image: linear-gradient(to top, var(--rosafondo) 0%, var(--blnaco)40%);  /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+
+    padding: 2rem;
+    border-radius: 2rem;
+    
 }
 
 body{
     font-size: 16px;
     font-family: 'Kreon', serif;
-}
-.logocirculo{
-
-}
-/*contenedor para manejar la barra de navegación, ancho, etc*/
-.contenedor{
-    width: 60rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
-    margin: 0 auto; /**/
-}
-/*para color de fondo*/
-.nav-bg{
-    background: rgba(43, 42, 41, 0.4);
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blnaco)30%); /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
 }
 
-.navegacion-principal{
+/*TIPOGRAFIA*/
+h1{
+    font-size: 6rem;
+    
+    color: var(--blnaco);  
+}
+
+h2{
+  
    
-   display: flex; /*habilita flex*/
-   justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
+   font-size: 5rem;
+   padding-top: 5rem;
+  
+}
+
+h3,h4{
+  
+   font-size: 3rem;
+}
+
+h1,h2,h3,h4{
+   font-family: 'Bebas Neue', cursive;
+   text-align: center;
+}
+
+#parrafo1{
+   font-size: 3rem;
+   text-align: center;
+   text-align: justify;
+   font-family: 'Roboto', sans-serif;
+    
     
 }
 
+
+ 
+
+
+/*NAVEGACIÓN PRINCIPAL*/
+/*para color de fondo*/
+
+
+
+@media (min-width: 768px) { /*resolución de la navegación para tablet*/
+   .navegacion-principal{
+       flex-direction: row;
+       justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
+   }
+   
+}
+
 /*ESTILOS A LA NAVEGACIÓN*/
-.navegacion-principal a {
-     color: var(--blnaco);
-     text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-     font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-     padding: 1rem ; 
-     
-    }
 
-    .navegacion-principal z {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
+
+    
+
+       .imagenlog{ /*padre*/
+         background-image: url(../img/papasinicio.png) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 500px;
+         padding-top: 0px;
+         margin-bottom: 2rem;
+         position: static;
+         
+       }
+
+       .contenido-imagenlog{ /*hijo*/
+         position: static;
+         background-color: rgb(0 0 0 / 70%); /*transparencia mejorada*/
+         width: 100%;
+         height: 100%;
+   
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: end;
+         padding-right: 50px;
+         padding-left: 50px;
         
+         
+      }
+       .maps {
+         display: block; 
+         text-align: center;
        }
 
-    .navegacion-principal z:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-       background-color: var(--verdepastel);
-       color: var(--negro);
-    }
-
-    .navegacion-principal b {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
-   
-       .navegacion-principal b:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+       /*:::PIE DE PAGINA:::*/
+       
+       .saborsa-final{
+         width: 215px;
+         height: 90px;
+      }
+      
+      
+      footer{
+          width: 100%;
           background-color: var(--azulpastel);
-          color: var(--negro);
-       }
+          color: var(--blnaco);
+          
+          
+     
+          
+      }
+     
+      .container-principal{
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+          
+      }
+     
+      .container{
 
-     .navegacion-principal c {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
-   
-       .navegacion-principal c:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--rosa);
-          color: var(--negro);
-       }
+          display: flex;
+          text-align: center;
+          justify-content: space-between; /*espacio entre las columnas del contenedor*/
+          padding: 10px; /*hacer el contenedor del footer mas pequeño de altura*/
+          }
+     
+         
+     
+     
+     
+      .colum1, .colum2, .colum3{
+          max-width: 400px;
+         
+     }
+     
+     .colum1, .saborsa-final{
+         display: block;
+         margin-top: 50px;
+         justify-content: space-between;
+     }
+     
 
-       .navegacion-principal d {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
-   
-       .navegacion-principal d:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--amarillopastel);
-          color: var(--negro);
-       }
+     
+     .colum2 h5{
+         font-size: 22px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
+        
+     }
+     
+     .fila{
+       margin-top: 20px;  
+       display: flex;
+     }
+     
+     .fila label{
+         margin-top: 0px;
+         margin-left: 20px;
+     }
+     
+    
+     
+     .colum3 h6{
+        margin-top: 36.7px;
+         font-size: 22px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
+     }
+     
+     .fila2{
+         margin-top: 20px;
+         display: flex;
+     
+     }
+     .fila2 label{
+         margin-left: 20px;
+         margin-top: 20px;
+         max-width: 170px;
+     
+     }
+     
+     .container-final{
+         width: 100%;
+         background-color: #212121;
+         
+         
+         
+     
+     }
+     
+     .final{
+         max-width: 1200px;
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+         padding: 20px;
+     }
+     
+     .copyright{
+         color: var(--blnaco);
+     }
+     
+     .politica a{
+         text-decoration: none;
+         color: var(--azulpastel);
+         font-weight: bold;
+         font-size: 1rem;
+     }
+     
+     @media (max-width: 1100px ) {
+      .container{
+          flex-wrap: wrap ;
+         
 
-       .navegacion-principal e {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
-   
-       .navegacion-principal e:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--blnaco);
-          color: var(--negro);
-       }
+         
+      }
+      
+      .colum2,
+      .colum3{
+          margin-top: 30px;
+      
+          
+          
+      }
+      
+   }
+     
+      
+
+   /*ESTILOS PARA INDEX NOSOTROS*/   
+   .social-bar{
+      position: fixed;
+      right: 0;
+      top: 35%;
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 100;
+  }
+  
+  .icon {
+      color: #ffffff;
+      text-decoration: none;
+      padding: .7rem;    
+      display: flex;
+      transition: all .5s;
+  }
+ 
+ 
+  .icon-facebook {
+      background: rgb(34, 34, 117);
+  }
+  .icon-whatsapp {
+      background: rgb(21, 160, 21);
+ 
+  }
+ 
+  .icon-instagram {
+  background: #c92069;
+ 
+  }
+ 
+  .icon-linkedin {
+      background: var(--azulpastel);
+  }
+  .icon:first-child{
+      border-radius: 1rem 0 0 0;
+  }
+  .icon:last-child {
+     border-radius: 0 0 0 1rem;
+  }
+ .icon:hover {
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 1rem;
+     box-shadow: 0 0 .5rem rdga(0, 0, 0, 0.42);
+ }
+ 
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+  
+  .header{
+         background-color: rgb(156, 31, 73);
+         height: 80px;
+         position: fixed;
+         width: 100%;
+         top: 0;
+         left: 0;
+  }
+  .negritas-let{
+     font-family: heebo;
+     
+     font-weight: bold;
+  }
+  .cursiva-let{
+      font-size: 30px;
+     text-align: center;
+     font-family: 'satisfy', cursive;
+     font-size: 4em;
+     line-height: 0.9em;
+     color: #FF66C2;
+  }
+  .nav{
+ display: flex;
+ justify-content: space-between;
+ max-width: 992px;
+ margin: 0 auto;
+  }
+  .nav-link{
+      color: rgb(238, 232, 232);
+      text-decoration: none;
+  }
+  
+ 
+  .logo img{
+   float: left;
+   padding: 8px;
+     width: 80px;
+     height: 80px;
+  }
+ 
+  .nav-menu{
+      display: flex;
+      margin-right: 40px;
+      list-style: none;
+  }
+  .nav-menu-item{
+      font-size: 15px;
+      margin: 0 10px;
+      line-height: 70px;
+     
+      width: max-content;
+ 
+  }
+  .nav-menu-link{
+      padding: 20px 10px;
+      border-radius: 14px;
+     
+  }
+  .nav-menu-linkc1:hover{
+      background-color: var(--verdepastel);
+      color: var(--negro);
+ 
+      transition: .5s;
+  }
+  .nav-menu-linkc2:hover{
+     background-color: var(--azulpastel);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc3:hover{
+     background-color: var(--rosa);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc4:hover{
+     background-color: var(--amarillopastel);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc5:hover{
+     background-color: white;
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ 
+ .nav-toggle{
+     color: #ffffff;
+     background: none;
+     border: none;
+     font-size: 30px;
+     padding: 0 20px;
+     line-height: 60px;
+     cursor: pointer;
+     display: none;
+     
+ }
+ @media (max-width: 508px){
+     .social-bar{
+         display: none;
+     }
+     body{
+         padding-top: 50px;
+         background-color: #c507ff;
+     }
+     
+ }
+ @media (max-width: 768px){
+     .social-bar{
+         display: none;
+     }
+     body{
+         padding-top: 70px;
+         background-color: #00AAE4;
+     }
+     
+     .header{
+         
+         height: 70px;
+     }
+     
+     .logo img{
+     
+         padding: 8px;
+           width: 70px;
+           height: 70px;
+        }
+ 
+     .nav-menu{
+          flex-direction: column;
+          align-items: center;
+          margin-right: 0px;
+          background-color: rgb(187, 92, 128);
+          position: fixed;
+          left: 0;
+          top: 70px;
+          width: 100%;
+          padding: 10px 0;
+          height: calc(100% - 60px);
+          overflow-y: auto;
+          left: 100%;
+          transition: left 0.3s;    
+     }
+     .nav-menu-item{
+          line-height: 70px;
+     }
+    
+ 
+  .nav-menu-linkc1:hover, .nav-menuc1-link_active {
+      background: none;
+     color: var(--verdepastel);
+ 
+    
+  }
+  .nav-menu-linkc2:hover, .nav-menuc2-link_active{
+     background: none;
+     color: var(--azulpastel);
+ 
+     
+ }
+ .nav-menu-linkc3:hover, .nav-menuc3-link_active{
+     background: none;
+    color: var(--rosa);
+ 
+     
+ }
+ .nav-menu-linkc4:hover, .nav-menuc4-link_active{
+     background: none;
+     color: var(--amarillopastel);
+     
+ }
+ .nav-menu-linkc5:hover, .nav-menuc5-link_active{
+     background: none;
+     color: var(--negro);
+     
+ }
+ 
+ 
+ .nav-toggle{
+     display: block;
+     
+ }
+ .nav-menu_visible{
+ left: 0;
+ }
+ 
+ .nav-toggle:focus:not(:focus-visible){
+ outline: none;
+ }
+ 
+ 
+  }
+   /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
