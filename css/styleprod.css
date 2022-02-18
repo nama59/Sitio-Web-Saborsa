@@ -1,0 +1,131 @@
+:root{
+   --blnaco: #ffffff;
+   --negro: #212121;
+   --azulpastel: #00AAE4;
+   --rosa: #F03687;
+   --verdepastel: #77dd77;
+   --amarillopastel: #FFFE71;
+
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Kreon', serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.8rem;
+    padding-top: 33rem;
+}
+.logocirculo{
+
+}
+/*contenedor para manejar la barra de navegación, ancho, etc*/
+.contenedor{
+    max-width: 60rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
+    margin: 0 auto; /**/
+}
+/*para color de fondo*/
+.nav-bg{
+    background: rgba(43, 42, 41, 0.4);
+}
+
+.navegacion-principal{
+   
+   display: flex; /*habilita flex*/
+   flex-direction: column;
+   justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
+    
+}
+
+@media (min-width: 768px) { /*resolución de la navegación para tablet*/
+   .navegacion-principal{
+       flex-direction: row;
+   }
+}
+
+/*ESTILOS A LA NAVEGACIÓN*/
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+     color: var(--blnaco);
+     text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+     font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+     padding: 1rem ; 
+     
+    }
+
+    .navegacion-principal z {
+        color: var(--blnaco);
+        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+        padding: 1rem ; 
+        
+       }
+
+    .navegacion-principal z:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+       background-color: var(--verdepastel);
+       color: var(--negro);
+    }
+
+    .navegacion-principal b {
+        color: var(--blnaco);
+        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+        padding: 1rem ; 
+       }
+   
+       .navegacion-principal b:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+          background-color: var(--azulpastel);
+          color: var(--negro);
+       }
+
+     .navegacion-principal c {
+        color: var(--blnaco);
+        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+        padding: 1rem ; 
+       }
+   
+       .navegacion-principal c:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+          background-color: var(--rosa);
+          color: var(--negro);
+       }
+
+       .navegacion-principal d {
+        color: var(--blnaco);
+        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+        padding: 1rem ; 
+       }
+   
+       .navegacion-principal d:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+          background-color: var(--amarillopastel);
+          color: var(--negro);
+       }
+
+       .navegacion-principal e {
+        color: var(--blnaco);
+        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
+        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
+        padding: 1rem ; 
+       }
+   
+       .navegacion-principal e:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
+          background-color: var(--blnaco);
+          color: var(--negro);
+       }
+
+       .imagenlog{
+         background-image: url(../img/logoCirculo.jpg) ;
+       }
+
+      
+
+     
