@@ -125,11 +125,14 @@ h1,h2,h3,h4{
     
 }
 
+
+
 @media (min-width: 768px) { /*resolución de la navegación para tablet*/
    .navegacion-principal{
        flex-direction: row;
        justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
    }
+   
 }
 
 /*ESTILOS A LA NAVEGACIÓN*/
@@ -236,22 +239,138 @@ h1,h2,h3,h4{
 
        /*:::PIE DE PAGINA:::*/
        
-       #parrafo-final{
-         text-align: center;
-         font-size: 2rem;
-         margin-top: 20px;
-         font-family: "lato-regular"
+       .saborsa-final{
+         width: 215px;
+         height: 90px;
+      }
+      
+      
+      footer{
+          width: 100%;
+          background-color: var(--azulpastel);
+          color: var(--blnaco);
+          
+          
+     
+          
       }
      
-      #saborsa-final{
-        justify-items: center;
-        display: block;
-        margin: 10rem auto 0 auto;
-        
-        width: 260px;
-        height: 100px;
-       
+      .container-principal{
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+          
       }
+     
+      .container{
+
+          display: flex;
+          text-align: center;
+          justify-content: space-between; /*espacio entre las columnas del contenedor*/
+          padding: 10px; /*hacer el contenedor del footer mas pequeño de altura*/
+          }
+     
+         
+     
+     
+     
+      .colum1, .colum2, .colum3{
+          max-width: 400px;
+         
+     }
+     
+     .colum1, .saborsa-final{
+         display: block;
+         margin-top: 50px;
+         justify-content: space-between;
+     }
+     
+
+     
+     .colum2 h5{
+         font-size: 22px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
+        
+     }
+     
+     .fila{
+       margin-top: 20px;  
+       display: flex;
+     }
+     
+     .fila label{
+         margin-top: 0px;
+         margin-left: 20px;
+     }
+     
+    
+     
+     .colum3 h6{
+        margin-top: 36.7px;
+         font-size: 22px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
+     }
+     
+     .fila2{
+         margin-top: 20px;
+         display: flex;
+     
+     }
+     .fila2 label{
+         margin-left: 20px;
+         margin-top: 20px;
+         max-width: 170px;
+     
+     }
+     
+     .container-final{
+         width: 100%;
+         background-color: #212121;
+         
+         
+         
+     
+     }
+     
+     .final{
+         max-width: 1200px;
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+         padding: 20px;
+     }
+     
+     .copyright{
+         color: var(--blnaco);
+     }
+     
+     .politica a{
+         text-decoration: none;
+         color: var(--azulpastel);
+         font-weight: bold;
+         font-size: 1rem;
+     }
+     
+     @media (max-width: 1100px ) {
+      .container{
+          flex-wrap: wrap ;
+         
+
+         
+      }
+      
+      .colum2,
+      .colum3{
+          margin-top: 30px;
+      
+          
+          
+      }
+      
+   }
+     
       
 
    /*ESTILOS PARA INDEX NOSOTROS*/   
