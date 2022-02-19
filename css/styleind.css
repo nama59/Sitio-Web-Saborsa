@@ -76,19 +76,19 @@ body{
 h1{
     font-size: 6rem;
     
-<<<<<<< HEAD
+
     color: var(--blnaco);  
-=======
+
     color: var(--blnaco);
     font-family: 'Staatliches', cursive;
     
     
->>>>>>> upstream/master
+
 }
 
 h2{
   
-<<<<<<< HEAD
+
    
    font-size: 5rem;
    padding-top: 5rem;
@@ -114,12 +114,7 @@ h1,h2,h3,h4{
     
 }
 
-=======
-   font-family: 'Rubik', sans-serif;
-   font-size: 5rem;
-   padding-top: 5rem;
-  
-}
+ 
 
 h3,h4{
    font-size: 3rem;
@@ -185,12 +180,12 @@ h1,h2,h3,h4{
         padding: 1rem ; 
         
        }
->>>>>>> upstream/master
+
 
  
 
 
-<<<<<<< HEAD
+
 /*NAVEGACIÓN PRINCIPAL*/
 /*para color de fondo*/
 
@@ -201,7 +196,7 @@ h1,h2,h3,h4{
        flex-direction: row;
        justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
    }
-=======
+
      .navegacion-principal c {
         color: var(--blnaco);
         text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
@@ -209,7 +204,7 @@ h1,h2,h3,h4{
         padding: 1rem ; 
        }
       
->>>>>>> upstream/master
+
    
 }
 
@@ -249,8 +244,7 @@ h1,h2,h3,h4{
          text-align: center;
        }
 
-<<<<<<< HEAD
-=======
+
        .navegacion-principal e {
         color: var(--blnaco);
         text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
@@ -291,7 +285,7 @@ h1,h2,h3,h4{
          text-align: center;
        }
 
->>>>>>> upstream/master
+
        /*:::PIE DE PAGINA:::*/
        
        .saborsa-final{
@@ -429,7 +423,7 @@ h1,h2,h3,h4{
       
 
    /*ESTILOS PARA INDEX NOSOTROS*/   
-<<<<<<< HEAD
+
    .social-bar{
       position: fixed;
       right: 0;
@@ -681,9 +675,9 @@ h1,h2,h3,h4{
  
   }
    /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
-=======
+
 
    /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
       
  
->>>>>>> upstream/master
+
