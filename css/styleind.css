@@ -76,14 +76,45 @@ body{
 h1{
     font-size: 6rem;
     
+<<<<<<< HEAD
+    color: var(--blnaco);  
+=======
     color: var(--blnaco);
     font-family: 'Staatliches', cursive;
     
     
+>>>>>>> upstream/master
 }
 
 h2{
   
+<<<<<<< HEAD
+   
+   font-size: 5rem;
+   padding-top: 5rem;
+  
+}
+
+h3,h4{
+  
+   font-size: 3rem;
+}
+
+h1,h2,h3,h4{
+   font-family: 'Bebas Neue', cursive;
+   text-align: center;
+}
+
+#parrafo1{
+   font-size: 3rem;
+   text-align: center;
+   text-align: justify;
+   font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+=======
    font-family: 'Rubik', sans-serif;
    font-size: 5rem;
    padding-top: 5rem;
@@ -154,24 +185,23 @@ h1,h2,h3,h4{
         padding: 1rem ; 
         
        }
+>>>>>>> upstream/master
 
-    .navegacion-principal z:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-       background-color: var(--verdepastel);
-       color: var(--negro);
-    }
+ 
 
-    .navegacion-principal b {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
-   
-       .navegacion-principal b:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--azulpastel);
-          color: var(--negro);
-       }
 
+<<<<<<< HEAD
+/*NAVEGACIÓN PRINCIPAL*/
+/*para color de fondo*/
+
+
+
+@media (min-width: 768px) { /*resolución de la navegación para tablet*/
+   .navegacion-principal{
+       flex-direction: row;
+       justify-content: space-between;/*distribuir el contenido horizontalmente, asi podemos separar las palabras*/
+   }
+=======
      .navegacion-principal c {
         color: var(--blnaco);
         text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
@@ -179,24 +209,48 @@ h1,h2,h3,h4{
         padding: 1rem ; 
        }
       
+>>>>>>> upstream/master
    
-       .navegacion-principal c:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--rosa);
-          color: var(--negro);
+}
+
+/*ESTILOS A LA NAVEGACIÓN*/
+
+
+    
+
+       .imagenlog{ /*padre*/
+         background-image: url(../img/papasinicio.png) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 500px;
+         padding-top: 0px;
+         margin-bottom: 2rem;
+         position: static;
+         
        }
 
-       .navegacion-principal d {
-        color: var(--blnaco);
-        text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
-        font-weight: 700; /*700 es lo mismo que poner bold, o sea negritas*/
-        padding: 1rem ; 
-       }
+       .contenido-imagenlog{ /*hijo*/
+         position: static;
+         background-color: rgb(0 0 0 / 70%); /*transparencia mejorada*/
+         width: 100%;
+         height: 100%;
    
-       .navegacion-principal d:hover{ /*el hover hará que al momento de posicionar el mause en una palabra se disparará un cuadro de color*/
-          background-color: var(--amarillopastel);
-          color: var(--negro);
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: end;
+         padding-right: 50px;
+         padding-left: 50px;
+        
+         
+      }
+       .maps {
+         display: block; 
+         text-align: center;
        }
 
+<<<<<<< HEAD
+=======
        .navegacion-principal e {
         color: var(--blnaco);
         text-decoration: none;  /*para quitar lal inea de abajo de las letras de los enlaces*/
@@ -237,6 +291,7 @@ h1,h2,h3,h4{
          text-align: center;
        }
 
+>>>>>>> upstream/master
        /*:::PIE DE PAGINA:::*/
        
        .saborsa-final{
@@ -374,7 +429,261 @@ h1,h2,h3,h4{
       
 
    /*ESTILOS PARA INDEX NOSOTROS*/   
+<<<<<<< HEAD
+   .social-bar{
+      position: fixed;
+      right: 0;
+      top: 35%;
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 100;
+  }
+  
+  .icon {
+      color: #ffffff;
+      text-decoration: none;
+      padding: .7rem;    
+      display: flex;
+      transition: all .5s;
+  }
+ 
+ 
+  .icon-facebook {
+      background: rgb(34, 34, 117);
+  }
+  .icon-whatsapp {
+      background: rgb(21, 160, 21);
+ 
+  }
+ 
+  .icon-instagram {
+  background: #c92069;
+ 
+  }
+ 
+  .icon-linkedin {
+      background: var(--azulpastel);
+  }
+  .icon:first-child{
+      border-radius: 1rem 0 0 0;
+  }
+  .icon:last-child {
+     border-radius: 0 0 0 1rem;
+  }
+ .icon:hover {
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 1rem;
+     box-shadow: 0 0 .5rem rdga(0, 0, 0, 0.42);
+ }
+ 
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+  
+  .header{
+         background-color: rgb(156, 31, 73);
+         height: 80px;
+         position: fixed;
+         width: 100%;
+         top: 0;
+         left: 0;
+  }
+  .negritas-let{
+     font-family: heebo;
+     
+     font-weight: bold;
+  }
+  .cursiva-let{
+      font-size: 30px;
+     text-align: center;
+     font-family: 'satisfy', cursive;
+     font-size: 4em;
+     line-height: 0.9em;
+     color: #FF66C2;
+  }
+  .nav{
+ display: flex;
+ justify-content: space-between;
+ max-width: 992px;
+ margin: 0 auto;
+  }
+  .nav-link{
+      color: rgb(238, 232, 232);
+      text-decoration: none;
+  }
+  
+ 
+  .logo img{
+   float: left;
+   padding: 8px;
+     width: 80px;
+     height: 80px;
+  }
+ 
+  .nav-menu{
+      display: flex;
+      margin-right: 40px;
+      list-style: none;
+  }
+  .nav-menu-item{
+      font-size: 15px;
+      margin: 0 10px;
+      line-height: 70px;
+     
+      width: max-content;
+ 
+  }
+  .nav-menu-link{
+      padding: 20px 10px;
+      border-radius: 14px;
+     
+  }
+  .nav-menu-linkc1:hover{
+      background-color: var(--verdepastel);
+      color: var(--negro);
+ 
+      transition: .5s;
+  }
+  .nav-menu-linkc2:hover{
+     background-color: var(--azulpastel);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc3:hover{
+     background-color: var(--rosa);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc4:hover{
+     background-color: var(--amarillopastel);
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ .nav-menu-linkc5:hover{
+     background-color: white;
+     color: var(--negro);
+ 
+     transition: .5s;
+ }
+ 
+ .nav-toggle{
+     color: #ffffff;
+     background: none;
+     border: none;
+     font-size: 30px;
+     padding: 0 20px;
+     line-height: 60px;
+     cursor: pointer;
+     display: none;
+     
+ }
+ @media (max-width: 508px){
+     .social-bar{
+         display: none;
+     }
+     body{
+         padding-top: 50px;
+         background-color: #c507ff;
+     }
+     
+ }
+ @media (max-width: 768px){
+     .social-bar{
+         display: none;
+     }
+     body{
+         padding-top: 70px;
+         background-color: #00AAE4;
+     }
+     
+     .header{
+         
+         height: 70px;
+     }
+     
+     .logo img{
+     
+         padding: 8px;
+           width: 70px;
+           height: 70px;
+        }
+ 
+     .nav-menu{
+          flex-direction: column;
+          align-items: center;
+          margin-right: 0px;
+          background-color: rgb(187, 92, 128);
+          position: fixed;
+          left: 0;
+          top: 70px;
+          width: 100%;
+          padding: 10px 0;
+          height: calc(100% - 60px);
+          overflow-y: auto;
+          left: 100%;
+          transition: left 0.3s;    
+     }
+     .nav-menu-item{
+          line-height: 70px;
+     }
+    
+ 
+  .nav-menu-linkc1:hover, .nav-menuc1-link_active {
+      background: none;
+     color: var(--verdepastel);
+ 
+    
+  }
+  .nav-menu-linkc2:hover, .nav-menuc2-link_active{
+     background: none;
+     color: var(--azulpastel);
+ 
+     
+ }
+ .nav-menu-linkc3:hover, .nav-menuc3-link_active{
+     background: none;
+    color: var(--rosa);
+ 
+     
+ }
+ .nav-menu-linkc4:hover, .nav-menuc4-link_active{
+     background: none;
+     color: var(--amarillopastel);
+     
+ }
+ .nav-menu-linkc5:hover, .nav-menuc5-link_active{
+     background: none;
+     color: var(--negro);
+     
+ }
+ 
+ 
+ .nav-toggle{
+     display: block;
+     
+ }
+ .nav-menu_visible{
+ left: 0;
+ }
+ 
+ .nav-toggle:focus:not(:focus-visible){
+ outline: none;
+ }
+ 
+ 
+  }
+   /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
+=======
 
    /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
       
  
+>>>>>>> upstream/master
