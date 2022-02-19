@@ -89,6 +89,7 @@ h1{
 h2{
   
 
+   
    font-size: 5rem;
    padding-top: 5rem;
   
@@ -131,7 +132,7 @@ h1,h2,h3,h4{
     
     
 }
-
+    
 
        .imagenlog{ /*padre*/
          background-image: url(../img/papasinicio.png) ;
@@ -165,6 +166,9 @@ h1,h2,h3,h4{
        }
 
 
+      
+
+      
 
        /*:::PIE DE PAGINA:::*/
        
@@ -359,7 +363,6 @@ h1,h2,h3,h4{
    box-sizing: border-box;
 }
 
-
   
   .header{
          background-color: rgb(156, 31, 73);
@@ -385,13 +388,15 @@ h1,h2,h3,h4{
   .nav{
  display: flex;
  justify-content: space-between;
-
+ 
  max-width: 992px;
  margin: 0 auto;
   }
   .nav-link{
       color: rgb(238, 232, 232);
       text-decoration: none;
+      font-family: 'Dosis', sans-serif;
+      font-size: 25px;
   }
   
  
@@ -557,8 +562,7 @@ h1,h2,h3,h4{
  
  
   }
-
-
+   /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
 
 
    
