@@ -75,29 +75,35 @@ body{
 /*TIPOGRAFIA*/
 h1{
     font-size: 6rem;
+
     
-
-    color: var(--blnaco);  
-
-    color: var(--blnaco);
     font-family: 'Staatliches', cursive;
-    
-    
-
 }
+
+.titulo-blanco{
+    color: var(--blnaco);
+}
+
+
 
 h2{
-  
-
-   
-   font-size: 5rem;
+  font-size: 6rem;
    padding-top: 5rem;
+   color: var(--azulpastel);
   
 }
 
-h3,h4{
+h3{
   
-   font-size: 3rem;
+   font-size: 5rem;
+   padding-top: 4rem;
+   color: var(--azulpastel);
+}
+
+h4{
+    font-size: 3rem;
+    padding-top: 7rem;
+    color: var(--rosa);
 }
 
 h1,h2,h3,h4{
@@ -105,8 +111,11 @@ h1,h2,h3,h4{
    text-align: center;
 }
 
+
+
 #parrafo1{
-   font-size: 3rem;
+    padding-top: 2rem;
+   font-size: 4.5rem;
    text-align: center;
    text-align: justify;
    font-family: 'Roboto', sans-serif;
@@ -114,24 +123,7 @@ h1,h2,h3,h4{
     
 }
 
- 
 
-h3,h4{
-   font-size: 3rem;
-}
-
-h1,h2,h3,h4{
-   text-align: center;
-}
-
-#parrafo1{
-   font-size: 3rem;
-   text-align: center;
-   text-align: justify;
-   
-    
-    
-}
     
 
        .imagenlog{ /*padre*/
@@ -161,6 +153,7 @@ h1,h2,h3,h4{
          
       }
        .maps {
+           padding-top: 3rem;
          display: block; 
          text-align: center;
        }
@@ -170,139 +163,7 @@ h1,h2,h3,h4{
 
       
 
-       /*:::PIE DE PAGINA:::*/
-       
-       .saborsa-final{
-         width: 215px;
-         height: 90px;
-      }
       
-      
-      footer{
-          width: 100%;
-          background-color: var(--azulpastel);
-          color: var(--blnaco);
-          
-          
-     
-          
-      }
-     
-      .container-principal{
-          width: 100%;
-          max-width: 1200px;
-          margin: auto;
-          
-      }
-     
-      .container{
-
-          display: flex;
-          text-align: center;
-          justify-content: space-between; /*espacio entre las columnas del contenedor*/
-          padding: 10px; /*hacer el contenedor del footer mas pequeño de altura*/
-          }
-     
-         
-     
-     
-     
-      .colum1, .colum2, .colum3{
-          max-width: 400px;
-         
-     }
-     
-     .colum1, .saborsa-final{
-         display: block;
-         margin-top: 50px;
-         justify-content: space-between;
-     }
-     
-
-     
-     .colum2 h5{
-         font-size: 22px;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         text-align: center;
-        
-     }
-     
-     .fila{
-       margin-top: 20px;  
-       display: flex;
-     }
-     
-     .fila label{
-         margin-top: 0px;
-         margin-left: 20px;
-     }
-     
-    
-     
-     .colum3 h6{
-        margin-top: 36.7px;
-         font-size: 22px;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         text-align: center;
-     }
-     
-     .fila2{
-         margin-top: 20px;
-         display: flex;
-     
-     }
-     .fila2 label{
-         margin-left: 20px;
-         margin-top: 20px;
-         max-width: 170px;
-     
-     }
-     
-     .container-final{
-         width: 100%;
-         background-color: #212121;
-         
-         
-         
-     
-     }
-     
-     .final{
-         max-width: 1200px;
-         margin: auto;
-         display: flex;
-         justify-content: space-between;
-         padding: 20px;
-     }
-     
-     .copyright{
-         color: var(--blnaco);
-     }
-     
-     .politica a{
-         text-decoration: none;
-         color: var(--azulpastel);
-         font-weight: bold;
-         font-size: 1rem;
-     }
-     
-     @media (max-width: 1100px ) {
-      .container{
-          flex-wrap: wrap ;
-         
-
-         
-      }
-      
-      .colum2,
-      .colum3{
-          margin-top: 30px;
-      
-          
-          
-      }
-      
-   }
      
       
 
@@ -565,6 +426,138 @@ h1,h2,h3,h4{
    /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
 
 
+    /*:::PIE DE PAGINA:::*/
+       
+    .saborsa-final{
+        width: 215px;
+        height: 90px;
+     }
+     
+     
+     footer{
+         width: 100%;
+         background-color: var(--azulpastel);
+         color: var(--blnaco);
+         margin-top: 100px;
+         
+         
+    
+         
+     }
+    
+     .container-principal{
+         width: 100%;
+         max-width: 1200px;
+         margin: auto;
+         
+     }
+    
+     .container{
+
+         display: flex;
+         text-align: center;
+         justify-content: space-between; /*espacio entre las columnas del contenedor*/
+         padding: 10px; /*hacer el contenedor del footer mas pequeño de altura*/
+         }
+    
+        
+    
+    
+    
+     .colum1, .colum2, .colum3{
+         max-width: 400px;
+         padding-top: 30px;
+         
+        
+    }
+    
+    .colum1, .saborsa-final{
+        display: block;
+        margin-top: 25px;
+        
+        justify-content: space-between;
+    }
+    
+
+    
+    .colum2 h5{
+        font-size: 22px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+       
+    }
+    
+    .fila{
+      margin-top: 20px;  
+      display: flex;
+    }
+    
+    .fila label{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    
+   
+    
+    .colum3 h6{
+      
+        font-size: 22px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    
+    .fila2{
+        margin-top: 20px;
+        display: flex;
+    
+    }
+    .fila2 label{
+       margin-top: 0px;
+       margin-left: 20px;
+    
+    }
+    
+    .container-final{
+        width: 100%;
+        background-color: #212121;
+        
+        
+        
+    
+    }
+    
+    .final{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .copyright{
+        color: var(--blnaco);
+    }
+    
+    .politica a{
+        text-decoration: none;
+        color: var(--azulpastel);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    
+    @media screen and (max-width: 1100px ) {
+     .container{
+         flex-wrap: wrap ;
+          
+     }
+     
+     .colum2, .colum3{
+         margin-top: 40px;
+        
+     }
+     
+  }
+/*AQUÍ TERMINA EL PIE DE PÁGINA*/
    
       
  
