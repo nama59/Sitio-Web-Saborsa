@@ -275,15 +275,16 @@ h1,h2,h3,h4{
   }
   .nav-menu-item{
       font-size: 15px;
-      margin: 0 10px;
+      margin: 0px;
       line-height: 70px;
      
       width: max-content;
  
   }
   .nav-menu-link{
-      padding: 20px 10px;
-      border-radius: 14px;
+      padding: 20px 15px;
+      padding-bottom: 30px;
+   
      
   }
   .nav-menu-linkc1:hover{
